@@ -21,12 +21,17 @@ div>img{
     width: 25%;
     float: left;
 }
+button{
+    margin: 10px;
+    padding: 10px;
+}
 p{
     text-align: justify;
 }
 footer{
     background-color: rgb(46, 46, 46);
     color: azure;
+    padding: 10px;
 }
 .linkek{
     width: 50px;

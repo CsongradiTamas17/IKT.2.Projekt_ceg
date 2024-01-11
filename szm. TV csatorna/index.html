@@ -7,19 +7,21 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
-    <title>Műsor</title>
+    <title>Szünetmentes TV csatorna</title>
 </head>
 <body class="container-fluid w-md-100">
             <header class="row fixed-top ">
+                <h1>CsCsT - Szünetmentes TV csatorna</h1>
                 <div class="col-12">
                     <div class="d-xl-none float-end m-auto">
                         <div class="dropdown">
                             <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                                 Menü
-                            </button>                        
+                            </button> 
                             <ol class="dropdown-menu">
                                 <li><a class="dropdown-item" href="index.html">Főoldal</a></li>
-                            </ul>
+                                <li><a class="dropdown-item" href="#Musor">Műsor</a></li>
+                            </ol>                       
                           </div>
                     </div>
                     <div class="d-xl-none float-end m-10">
@@ -33,7 +35,7 @@
                             </ul>
                           </div>
                     </div>
-                        <table class="  col-lg-12 col-md-3 d-none d-xl-block  ">
+                        <table class="col-lg-12 col-md-3 d-none d-xl-block">
                             <thead>
                                 <tr>
                                     <th><a class="dropdown-item" href="index.html">Főoldal</a></th>
@@ -56,52 +58,281 @@
             <br><br>
             <main class="row mx-auto col-md-12 w-md-100 col-sm-12 col-lg-8">
                 <div class="col-12">
-                    <h1 id="Musor">CsCsT - Szünetmentes TV csatorna</h1>
                     <br>
                 </div>
                 <section>
-                    <h2>Műsoridő</h2>
+                    <h2 id="Musor">Műsor</h2>
                     <div>
-                        <ul>
-                            <li>7:00-8:00 anime</li>
-                            <div id="carouselExample" class="carousel slide">
-                                <div class="carousel-inner">
-                                  <div class="carousel-item active">
-                                    <h3>The Eminence in Shadow</h3>
-                                    <img src="img/kep1.png" class="d-block w-100">
-                                    <p>Hatalmas hősök és ördögi gonosztevők. Az emberek ezekhez hasonló karakterek szeretnének lenni. De Cid Kagenou-val nem ez a helyzet. Ő ennek az egésznek a valódi irányítója akar lenni, aki a háttérből mozgatja a szálakat, és kinek fondorlatai előre viszik a cselekményt. Az előző életében, a modernkori Japánban, ezt a célját nem tudta megvalósítani. Azonban most, hogy újjászületett egy mágikus világban, végre tényleg az árnyékokban meglapuló főméltóság lehet. Miközben Cid azt tetteti, hogy csak egy teljesen átlagos emberke, tagokat szervez be a (hamis) szervezetébe, az Árnyékkertbe, melynek célja, hogy leigázzák a misztikus szektát, amely az árnyékok között mozog. Sok-sok rögtönzéssel Cid a (hamis) szervezetét a gonosz (de meglepően valódi) Diabolos Szekta ellen irányítja.</p>
-                                  </div>
-                                  <div class="carousel-item">
-                                    <h3>Bastard!! Ankoku no Hakaishin (ONA)</h3>
-                                    <img src="img/kep2.png" class="d-block w-100">
-                                    <p>A Metallicana királyságát megtámadja a Havoc Négy Ura. Ez a gazemberekből álló csapat – Gara nindzsa mester, Nei Arshes mennydörgés császárnő, hideg és ravasz Kall-Su, valamint Abigail, egy rejtélyes sötét pap – mindent megtesznek, hogy megszerezzék, amit akarnak, még akkor is, ha ezzel teljes pusztulást hoznak a világra. Geo Főpap kétségbeesetten szeretne segíteni a királyság és a nép megmentésében. Felszabadítja a nagy varázslót, Dark Schneidert, aki korábban a gonoszok szövetségese volt. De Dark Schneidernek saját tervei vannak. Vajon megállítja a Havoc Négy Urát, vagy csatlakozik hozzájuk a világ meghódításában?</p>
-                                  </div>
-                                  <div class="carousel-item">
-                                    <h3></h3>
-                                    <img src="img/kep3.png" class="d-block w-100">
-                                    <p></p>
-                                  </div>
-                                </div>
-                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                  <span class="visually-hidden">Previous</span>
-                                </button>
-                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                  <span class="visually-hidden">Next</span>
-                                </button>
-                              </div>
-                            <li>8:00-9:00 gyerekmese</li>
-
-                            <li>9:00-12:00 sorozatok időseknek</li>
-                            <li>12:00-14:00 egy választott film</li>
-                            <li>14:00-16:00 sorozatok</li>
-                            <li>16:00-18:00 egy másik választott film</li>
-                            <li>18:00-20:00 egy másik választott film</li>
-                            <li>20:00-21:00 sorozatok</li>
-                            <li>21:00-22:00 anime sorozat</li>
-                            <li>22:00-7:00 reklámok</li>
-                        </ul>
+                        <li>7:00-8:00 anime</li>
+                          <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                The Eminence in Shadow
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><img src="img/kep1.png"></li>
+                              <li><p>Hatalmas hősök és ördögi gonosztevők. Az emberek ezekhez hasonló karakterek szeretnének lenni. De Cid Kagenou-val nem ez a helyzet. Ő ennek az egésznek a valódi irányítója akar lenni, aki a háttérből mozgatja a szálakat, és kinek fondorlatai előre viszik a cselekményt. Az előző életében, a modernkori Japánban, ezt a célját nem tudta megvalósítani. Azonban most, hogy újjászületett egy mágikus világban, végre tényleg az árnyékokban meglapuló főméltóság lehet. Miközben Cid azt tetteti, hogy csak egy teljesen átlagos emberke, tagokat szervez be a (hamis) szervezetébe, az Árnyékkertbe, melynek célja, hogy leigázzák a misztikus szektát, amely az árnyékok között mozog. Sok-sok rögtönzéssel Cid a (hamis) szervezetét a gonosz (de meglepően valódi) Diabolos Szekta ellen irányítja.</p></li>
+                            </ul>
+                          </div>
+                          <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Bastard!! Ankoku no Hakaishin (ONA)
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><img src="img/kep2.png"></li>
+                              <li><p>A Metallicana királyságát megtámadja a Havoc Négy Ura. Ez a gazemberekből álló csapat – Gara nindzsa mester, Nei Arshes mennydörgés császárnő, hideg és ravasz Kall-Su, valamint Abigail, egy rejtélyes sötét pap – mindent megtesznek, hogy megszerezzék, amit akarnak, még akkor is, ha ezzel teljes pusztulást hoznak a világra. Geo Főpap kétségbeesetten szeretne segíteni a királyság és a nép megmentésében. Felszabadítja a nagy varázslót, Dark Schneidert, aki korábban a gonoszok szövetségese volt. De Dark Schneidernek saját tervei vannak. Vajon megállítja a Havoc Négy Urát, vagy csatlakozik hozzájuk a világ meghódításában?</p></li>
+                            </ul>
+                          </div>
+                          <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Classroom for Heroes
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><img src="img/kep3.png"></li>
+                              <li><p>Arnest Flaming olyan lány, akinek nagy a kötelességtudata és a hősképző Rosewood akadémia legjobb tanulója, ezért kapja a Lángok Császárnője becenevet. Egy nap találkozik Blade-del, a gondtalan átiratkozó diákkal, aki úgy tűnik, ugyanolyan erős mint Arnest, amit a lány nagyon irritálónak talál. Azonban a király személyesen őt kéri fel, hogy vezesse körbe Blade-et az akadémián és felügyelje őt az ott tartózkodása alatt.</p></li>
+                            </ul>
+                          </div>
+                    </div>
+                    <div>
+                        <li>8:00-9:00 gyerekmese</li>
+                          <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Tom és Jerry
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><img src="img/kep4.jpg"></li>
+                              <li><p>A világ leghíresebb macska-egér párosa, akik soha nem hagyjá abba a vetélkedést és verekedést.</p></li>
+                            </ul>
+                          </div>
+                          <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              The Road Runner Show
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><img src="img/kep5.jpg"></li>
+                              <li><p>A ravasz, ravasz és állandóan éhes prérifarkas minden epizódban többször is megpróbálja elkapni, majd megenni a Road Runnert , de ez mindig nagy sikertelenséggel jár.  A prérifarkas állati ösztönei helyett abszurd módon bonyolult eszközökkel próbálja elkapni zsákmányát, ami komikusan visszafelé sül el, és a prérifarkas gyakran pofonmódra megsérül.</p></li>
+                            </ul>
+                          </div>
+                          <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              WALL-E
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><img src="img/kep6.jpg"></li>
+                              <li><p>A kíváncsi és szeretetreméltó WALL-E több száz magányos éven át tette a feladatát, de amikor találkozik egy EVE nevű, csinos keresőrobottal, új életcélt talál magának. Csatlakozz hozzájuk te is egy fantasztikus utazásra az univerzumon át!</p></li>
+                            </ul>
+                          </div>
+                    </div>
+                    <div>
+                        <li>9:00-12:00 sorozatok időseknek</li>
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Knight Rider
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><img src="img/kep7.jpg"></li>
+                              <li><p>Michael Long, a vietnami veterán és titkos ügynök egy akció során súlyosan megsebesül. Szerencséjére ráakad egy emberbarát milliomos, Wiltton Knight, akinek a segítségével Long Michael Knight-ként kezdhet új életet. Michaelt egyetlen cél élteti: a bűnözők nyomába eredve érvényt szerezni az igazságnak. A cseppet sem veszélytelen megbízatásai során - barátai: Bonnie és Devon mellett - K.I.T.T., az emberi életet védő és beszélni is képes csodaautója segíti.</p></li>
+                            </ul>
+                          </div>
+                          <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Dallas
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><img src="img/kep8.jpg"></li>
+                              <li><p>Bobby nem árulja el a családnak, hogy halálos beteg, abban bízik, hogy marad elég ideje véget vetni az évek óta tartó viszálynak. Ehhez azonban Jockey segítsége is kell, akit egészen más cél hajt. Mindenben támogatja nagyratörő fia, Johnny terveit, aki még Southforkot is feltúrja az olajért. Az alternatív energiával kísérletező Christopher rossz szemmel nézi unokatestvére ügyeskedéseit, aki egykori szerelmét, Elenát is elcsábította.</p></li>
+                            </ul>
+                          </div>
+                          <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Poirot
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><img src="img/kep9.jpg"></li>
+                              <li><p>Amikor Agatha Christie megálmodta a belga nyomozó alakját, alacsony termetű, köpcös, díszes bajuszú, talpig elegáns úriembert képzelt el, aki valamikor az 1880-as években született.Az írónő által életre keltett nyomozó évtizedeken keresztül derítette fel a rejtélyes ügyeket, saját magát pedig minden szerénytelenséget nélkülözve remek embernek tartotta. Christie egészen az 1920-as évektől írt Poirot könyveket, mígnem 1975-ben, a Függöny című regényben vetett véget a detektív életének, aki a leírtak szerint 96 évesen, szívbetegség következtében hunyt el. A filmvásznon több színésznek is lehetősége volt belebújni Poirot bőrébe, leginkább mégis David Suchet alakítása emlékezetes.</p></li>
+                            </ul>
+                          </div>
+                    </div>
+                    <div>
+                        <li>12:00-14:00 egy választott film</li>
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Jurassic Park
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><img src="img/kep10.jpg"></li>
+                                <li><p>John Hammond a világ legkiválóbb genetikusai segítségével valóra váltja élete nagy álmát: újraalkotja a jura-korban élt őslényeket, s őslényparkot rendez be egy eldugott szigeten. A park tervezői áttörhetetlen biztonsági rendszert dolgoznak ki a majdani látogatók védelmére. Arra azonban nem számítottak, hogy egyik emberük a konkurencia megbízásából kikapcsolja a rendszert. Az őslények elszabadulnak, s kiderül, hogy sokkal gyorsabbak, intelligensebbek és veszélyesebbek, mint ahogy azt a park megalkotói gondolták.</p></li>
+                              </ul>
+                          </div>
+                          <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Űrdongó
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><img src="img/kep11.jpg"></li>
+                                <li><p>1987-ben Űrdongó menekülni kényszerül a Cybertronról, és egy kaliforniai tengerparti kisváros roncstelepén rejtőzik el. Charlie (Hailee Steinfeld) éppen 18 éves lesz, és keresi a helyét a világban. Ő talál rá az ütött-kopott, lerobbant Űrdongóra. Amikor Charlie életre kelti, hamar ráébred, hogy ez az autó nem csak egy közönséges Volkswagen Bogár...</p></li>
+                              </ul>
+                          </div>
+                          <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Szellemírtók
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><img src="img/kep12.jpg"></li>
+                                <li><p>Dr. Venkmant (Bill Murray), Dr. Stantzot (Dan Aykroyd) és Dr. Spenglert (Harold Ramis), a mániákus parapszichológusokat kirúgják az egytemről, ahol eddig tanítottak és kutatásaikat végezték. Megélhetésük és Manhattan érdekében szellemirtó irodát nyitnak. Az első komoly megbízásuk nem is várat sokáig magára, a szomszédjukat és annak házát megszállták a szellemek. A baj nem jár egyedül: hőseinknek hamarosan a New Yorkban elszaporodó kóbor szellemek is feladják a leckét.</p></li>
+                              </ul>
+                          </div>
+                          <div>     
+                        <li>14:00-16:00 sorozatok</li>
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Castle
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><img src="img/kep13.jpg"></li>
+                                <li><p>A krimi koronázatlan királya Rick Castle (Nathan Fillion) az egyik legsikeresebb író, akitől újabb remekműveket várnak. Csakhogy Castle alkotói válságba került, nincs egyetlen eredeti sztorija sem, ezért kapóra jön neki, amikor egy ügyben a rendőrség a segítségét kéri. Kapcsolatai révén eléri, hogy a rendőrség tanácsadójaként részt vehessen Kate Beckett (Stana Katic) nyomozónő mellett a nyomozásokban. Ennek azonban Beckett cseppet sem örül, mert Castle idegesítően pimasz, öntelt, irányíthatatlan és gátlástalanul használja kisfiús sármját. A folyton civódó páros a kényszerű közös munka kapcsán számos ügyet megold, miközben egyre jobban megismerik egymást.</p></li>
+                              </ul>
+                          </div>
+                          <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Jóbarátok
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><img src="img/kep14.jpg"></li>
+                                <li><p>A Jóbarátok méltán az egyik legnépszerűbb sorozat világszerte szellemes dialógusai, kifinomult és szerethető karakterei révén. Hat New York-i jóbarát életén keresztül pillanthatunk be a barátságok, a karrierépítés és a randizás rejtelmeibe.</p></li>
+                              </ul>
+                          </div>
+                          <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Autókereskedők
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><img src="img/kep15.jpg"></li>
+                                <li><p>Mike Brewer, a tapasztalt autókereskedő és Edd China, a szuperszerelő már több mint tíz éve azon dolgoznak, hogy megmentsék a jobb sorsra érdemes klasszikus autókat a roncsteleptől. A műsorban Mike megvillantja a használtautó-vásárlás minden csínját-bínját, Edd pedig olyan fogásokat mutat műhelyében, amelyek ugyan sok munkával járnak, de a lehető legkisebb anyagi befektetéssel eredményeznek nagy változásokat a veterán autókban.</p></li>
+                              </ul>
+                          </div>
+                        </div>
+                        <div>
+                        <li>16:00-18:00 egy másik választott film</li>
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Különben dühbe jövünk
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><img src="img/kep16.jpg"></li>
+                                <li><p>Kid (Terence Hill) és Ben (Bud Spencer) sivatagi autóversenyre készülnek, de valaki mindenképp meg akarja akadályozni győzelmüket. Míg ők sör-virsli versenyen bizonygatják rátermettségüket, egy helyi bűnbanda tönkreteszi kocsijukat. A filmtörténet legviccesebb bunyósai nem hagyják bosszú nélkül a történteket, sőt a járművüket is pótolni kell. </p></li>
+                              </ul>
+                          </div>
+                          <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Star Wars IV. rész: Egy új remény
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><img src="img/kep17.jpg"></li>
+                                <li><p>Réges régen, egy távoli galaxisban kezdődött a nagy kaland, amikor Leia Organa hercegnő (Carrie Fisher) két fura robottal egy alig értékelhető hologramot küldött az egyetlen Jedi lovagnak, a remeteként élő Ben Kenobinak (Alec Guinness). Az idős jedi Luke Skywalker (Mark Hamill), Han Solo (Harrison Ford) és szőrős vukija, a hatalmas Chewbacca társaságában útra kel, hogy kiszabadítsa a hercegnőt Darth Vader fogságából, és győzelemre vigye az igaz ügyet az egész Galaxisban.</p></li>
+                              </ul>
+                          </div>
+                          <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Indiana Jones és az elveszett frigyláda fosztogatói
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><img src="img/kep18.jpg"></li>
+                                <li><p>Indiana Jones régész, professzor és kalandor egy személyben, aki semmilyen veszélytől sem riad vissza, hogy megszerezzen egy műkincset. 1936-ban híre jön, hogy a németek hatalmas ásatásokba kezdtek Egyiptomban. A Biblia legendás ereklyéjét, a frigyládát keresik, amiben Mózes kőtáblái találhatók a tízparancsolattal. A mítosz szerint ugyanis legyőzhetetlenné válik, aki a ládát birtokolja. Az amerikai titkosszolgálat megbízza Indiana Jones-t, hogy előzze meg a nácikat. A kalandvágyó professzor Egyiptomba utazik, ahol elkeseredett harc bontakozik ki a frigyládáért.</p></li>
+                              </ul>
+                          </div>
+                        </div>
+                        <div>
+                        <li>18:00-20:00 egy másik választott film</li>
+                        <div class="dropdown">
+                          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            A miniszter félrelép
+                          </button>
+                          <ul class="dropdown-menu">
+                              <li><img src="img/kep19.jpg"></li>
+                              <li><p>Vitt Péter miniszter helyett mindig titkára, Galamb Sándor viszi el a balhét. De a cinikus kormánytag most alaposan benne van a pácban. Az Astoriában tervezett kellemes kis estét az ellenzék titkárnőjével, miközben a parlamentben éjszakai ülés zajlik, ám a legizgalmasabb pillanatban ölükbe pottyan egy hulla. Nosza odacsörgeti Galambot, hogy takarítsa el, míg ők lelépnek, ám az akció nem pont úgy sikerül, ahogy akarták. Megjelenik a féltékeny férj, szétveri a berendezést, a szállodaigazgató pánikba esik, a hulla pedig lábra kap. </p></li>
+                            </ul>
+                        </div>
+                        <div class="dropdown">
+                          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            James Bond: Halj meg máskor
+                          </button>
+                          <ul class="dropdown-menu">
+                              <li><img src="img/kep20.jpg"></li>
+                              <li><p>James Bond 40 éve a legkedveltebb titkosügynök és nem hiába. A huszadik, jubileumi film sem okozhatott csalódást, sőt sokak szerint a sorozat egyik legjobb epizódja. A 007-es ügynök (Pierce Brosnan) körül gyorsan zajlanak az események. Bond ezúttal az Észak- és Dél-Korea közötti acsarkodásokban vesz részt. Az északiak mindenre kapható banditája, Zao (Rick Yune) foglyul ejti. Szabadulásakor Bond bosszút esküszik ellene. Következő megbízatása egy rejtélyes milliomos, Gustav Graves (Toby Stephens) ellen szól, akinek nagy tervei vannak a világ leigázására. Két hölgy is nehezíti Bond dolgát: Jinx (Halle Berry), a gyönyörű gyémántcsempész és a nyugtalanító Miranda Frost (Rosamund Pike). Koreába Londonon és Kubán át vezetnek vissza a szövevényes szálak. </p></li>
+                            </ul>
+                        </div>
+                        <div class="dropdown">
+                          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Pókember
+                          </button>
+                          <ul class="dropdown-menu">
+                              <li><img src="img/kep21.jpg"></li>
+                              <li><p>Egy pókcsípés nem a világ. Peter Parker (Tobey Maguire), a kétballábas diákújságíró világa mégis fenekestül felfordul, amikor egy laboratóriumi osztálykirándulás során megcsípi egy mutáns pók. Ezt követően a srác egyre furább képességeket tapasztal magán: könnyedén sétál a plafonon, csuklójából ragadós pókszálat lő ki, a veszélyeket pedig jóval bekövetkezésük előtt megérzi. Ami kezdetben játéknak tűnik, hamarosan szörnyű és izgalmas kötelezettséggé válik. Peternek meg kell küzdenie az emberfeletti erővel rendelkező, gonosz Zöld Manóval (Willem Dafoe) és el kell nyernie a gyönyörű Mary Jane (Kirsten Dunst) szerelmét.</p></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div>
+                        <li>20:00-21:00 sorozatok</li>
+                          <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Jurassic World: Krétakori tábor
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><img src="img/kep22.jpg"></li>
+                                <li><p>A Nublar-szigeti modern kalandtábor hat kiválasztott résztvevőjének össze kell fognia a túlélésért folytatott harcban, amikor a dinoszauruszok kitörnek a fogságból.</p></li>
+                              </ul>
+                          </div>
+                          <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Gyilkos elmék
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><img src="img/kep23.jpg"></li>
+                                <li><p>A Gyilkos elmék története az FBI egyik különleges részlegéről szól. A csoport feladata nem kevesebb, mint az ország bűnöző állományát, valamint a bűnözésre hajlamos személyeket analizálni, a különösen veszélyeseket kiszűrni és megállítani, mielőtt újra lecsaphatna.</p></li>
+                              </ul>
+                          </div>
+                          <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              A mi kis falunk
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><img src="img/kep24.jpg"></li>
+                                <li><p>A sorozat egy kis falu mulatságos hétköznapjait mutatja be olyan karakterek segítségével, akikkel csak és kizárólag itt találkozhatunk: egy ügyeskedő polgármester és kultúrharcos asszisztense, egy testépítő pap, egy szexi kocsmáros, egy féleszű rendőr, egy rezignált körzeti orvos és egy playboy foci edző. A vidéki környezet és a számtalan külső felvétel olyan keretbe helyezi a sorozatot, mely garantálja a felhőtlen szórakozást és a tökéletes kikapcsolódást.</p></li>
+                              </ul>
+                          </div>
+                        </div>
+                        <div>
+                        <li>21:00-22:00 anime sorozat</li>
+                          <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Naruto
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><img src="img/kep25.png"></li>
+                                <li><p>Főszereplőink lakhelye Konoha, avagy Hidden Leaf Village, aminek a vezetője a hivatalosan legerősebb és legrangosabb ninja, a Hokage. 12 évvel a történet kezdete előtt egy óriási kilencfarkú rókadémon (Kyuubi) támadta meg a falut, amit az akkori Hokage csak élete árán tudott megállítani, azt is úgy, hogy egy újszülött lelkébe zárta el a démont. Ez az újszülött volt Uzumaki Naruto, sorozatunk főhőse. Narutot egész gyerekkorában kerülték (mert a felnőttek úgy tekintettek rá, mintha ő lenne a démon, amiről ő nem is tudott), mindig egyedül volt és a tanulás is nehezen ment neki. Emellett az egyes számú bajkeverő is a faluban és állítása szerint egy nap Hokage lesz belőle, ez a célja. Hamar elválik, hogy nem csak a szája nagy és okkal olyan, amilyen.</p></li>
+                            </ul>
+                          </div>
+                          <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              One Piece
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><img src="img/kep26.png"></li>
+                                <li><p>Az emberek valóra akarják váltani álmaikat, így a Grand Line felé indultak. Ezzel elkezdődött a Nagy Kalózkor! Monkey D. Luffy is a Grand Line felé szeretne hajózni, csak épp se legénysége, se hajója nincs. Egyetlen tulajdona a szalmakalapja, amit egy régi kalózbarátjától kapott; plusz a Gumigyümölcs ereje, aminek köszönhetően olyan lett, mint egy gumiember: bármely testrészét képes megnyújtani. Természetesen talál magának társakat is a Kalózvadász és kardforgató Roronoa Zoro, a navigátor és térképrajzoló Nami, a szakácsművészetéről és rúgótechnikájáról ismert Sanji, és a hazudozó mesterlövész, Usopp személyében. A Going Merry fedélzetén utazva bejárják a világ tengereit, harcolnak veszedelmes kalózok, vérszomjas szörnyetegek, törvénytisztelő haditengerészek, és még ki tudja hányféle nép ellen. Rengeteg izgalmas kalandon esnek át.</p></li>
+                            </ul>
+                          </div>
+                          <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Bleach: Memories in the Rain
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><img src="img/kep27.png"></li>
+                                <li><p>Ez az OVA a Bleach sorozat 8-9. epizódját dolgozza fel újra egy kicsit másképp. A történet szerint Icihigo édesanyja halálának évfordulóján a család kilátogat a temetőbe, azonban a helyettes shinigami itt sem tétlenkedhet: ideje leszámolnia anyja gyilkosával, a Nagy Halásszal.</p></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div>
+                        <li>22:00-7:00 reklámok</li>
                     </div>
                 </section>
                 <section class="row">
@@ -137,13 +368,9 @@
                                 <p>tulipan.simon@gmail.com - +36 20 585 6895</p>
                             </ul>
                         </article>
-                        <article class="col-xl-1 d-none d-lg-block">
-                                <img src="img/logo.png" alt="logo" id="ikepek">
-                        </article>
                         <article class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
                             <p>Szolgáltató: Kockáztató Kockák, BMSZC Neumann János Informatikai Technikum</p>
-                        </article>
-                        <article class="mx-auto col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                            <p></p>
                             <p>Telephely: BMSZC Neumann János Informatikai Technikum</p>
                             <ul>
                                 <p>1144 Budapest, Kerepesi út 124.</p>
