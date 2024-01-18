@@ -17,9 +17,14 @@ ol>li>a:link{
 h1{
     text-align: center;
 }
-div>img{
+img{
     width: 25%;
+    margin: 5px;
     float: left;
+}
+section>div{
+    float: left;
+    margin: 10px;
 }
 button{
     margin: 10px;
@@ -36,4 +41,12 @@ footer{
 .linkek{
     width: 50px;
     float: right;
+}
+a:link{
+    text-decoration: none;
+    float: left;
+    color: white;
+}
+#logo{
+    width: 150px;
 }

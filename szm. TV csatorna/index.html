@@ -10,56 +10,30 @@
     <title>Szünetmentes TV csatorna</title>
 </head>
 <body class="container-fluid w-md-100">
-            <header class="row fixed-top ">
-                <h1>CsCsT - Szünetmentes TV csatorna</h1>
-                <div class="col-12">
-                    <div class="d-xl-none float-end m-auto">
-                        <div class="dropdown">
-                            <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                                Menü
-                            </button> 
-                            <ol class="dropdown-menu">
-                                <li><a class="dropdown-item" href="index.html">Főoldal</a></li>
-                                <li><a class="dropdown-item" href="#Musor">Műsor</a></li>
-                            </ol>                       
-                          </div>
-                    </div>
-                    <div class="d-xl-none float-end m-10">
-                        <div class="dropdown">
-                            <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                                Nyelv
-                            </button>
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="index.html">Magyar</a></li>
-                              <li><a class="dropdown-item" href="index_en.html">Angol</a></li>
-                            </ul>
-                          </div>
-                    </div>
-                        <table class="col-lg-12 col-md-3 d-none d-xl-block">
-                            <thead>
-                                <tr>
-                                    <th><a class="dropdown-item" href="index.html">Főoldal</a></th>
-                                    <th class=" float-end">
-                                        <div class="dropdown">
-                                            <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                                                Nyelv
-                                            </button>
-                                            <ul class="dropdown-menu">
-                                              <li><a class="dropdown-item" href="index.html">Magyar</a></li>
-                                              <li><a class="dropdown-item" href="index_en.html">Angol</a></li>
-                                            </ul>
-                                          </div>
-                                    </th>
-                                </tr>
-                            </thead>
-                        </table>
+    <header class="row fixed-top">
+      <div class="col-12 float-start">
+        <h1>CsCsT - Szünetmentes TV csatorna</h1>
+          <div class="float-end m-auto">
+              <div class="dropdown">
+                  <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                      Menü
+                  </button> 
+                  <ol class="dropdown-menu">
+                    <li><a class="dropdown-item" href="index.html">Főoldal</a></li>
+                    <li><a class="dropdown-item" href="#Rolunk">Rólunk</a></li>
+                    <li><a class="dropdown-item" href="#Musor">Műsor</a></li>
+                    <li><a class="dropdown-item" href="#Kapcsolat">Kapcsolat</a></li>
+                  </ol>                       
                 </div>
-            </header>
-            <br><br>
+          </div>
+  </header>
             <main class="row mx-auto col-md-12 w-md-100 col-sm-12 col-lg-8">
-                <div class="col-12">
-                    <br>
-                </div>
+                <section>
+                  <br><br><br>
+                  <h2 id="Rolunk">Rólunk</h2>
+                  <p>A mi csatornánk nem egy átlagos TV csatorna, mivel a nézők szavazhatnak, hogy mit nézzenek, emellett ingyenes is.</p>
+                  <br>
+                </section>
                 <section>
                     <h2 id="Musor">Műsor</h2>
                     <div>
@@ -153,7 +127,7 @@
                           </div>
                     </div>
                     <div>
-                        <li>12:00-14:00 egy választott film</li>
+                        <li id="I4">12:00-14:00 egy választott film</li>
                         <div class="dropdown">
                             <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Jurassic Park
@@ -182,33 +156,33 @@
                               </ul>
                           </div>
                           <div>     
-                        <li>14:00-16:00 sorozatok</li>
-                        <div class="dropdown">
-                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Castle
-                            </button>
-                            <ul class="dropdown-menu">
-                                <li><img src="img/kep13.jpg"></li>
-                                <li><p>A krimi koronázatlan királya Rick Castle (Nathan Fillion) az egyik legsikeresebb író, akitől újabb remekműveket várnak. Csakhogy Castle alkotói válságba került, nincs egyetlen eredeti sztorija sem, ezért kapóra jön neki, amikor egy ügyben a rendőrség a segítségét kéri. Kapcsolatai révén eléri, hogy a rendőrség tanácsadójaként részt vehessen Kate Beckett (Stana Katic) nyomozónő mellett a nyomozásokban. Ennek azonban Beckett cseppet sem örül, mert Castle idegesítően pimasz, öntelt, irányíthatatlan és gátlástalanul használja kisfiús sármját. A folyton civódó páros a kényszerű közös munka kapcsán számos ügyet megold, miközben egyre jobban megismerik egymást.</p></li>
-                              </ul>
-                          </div>
+                          <li>14:00-16:00 sorozatok</li>
                           <div class="dropdown">
-                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Jóbarátok
-                            </button>
-                            <ul class="dropdown-menu">
-                                <li><img src="img/kep14.jpg"></li>
-                                <li><p>A Jóbarátok méltán az egyik legnépszerűbb sorozat világszerte szellemes dialógusai, kifinomult és szerethető karakterei révén. Hat New York-i jóbarát életén keresztül pillanthatunk be a barátságok, a karrierépítés és a randizás rejtelmeibe.</p></li>
-                              </ul>
-                          </div>
-                          <div class="dropdown">
-                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Autókereskedők
-                            </button>
-                            <ul class="dropdown-menu">
-                                <li><img src="img/kep15.jpg"></li>
-                                <li><p>Mike Brewer, a tapasztalt autókereskedő és Edd China, a szuperszerelő már több mint tíz éve azon dolgoznak, hogy megmentsék a jobb sorsra érdemes klasszikus autókat a roncsteleptől. A műsorban Mike megvillantja a használtautó-vásárlás minden csínját-bínját, Edd pedig olyan fogásokat mutat műhelyében, amelyek ugyan sok munkával járnak, de a lehető legkisebb anyagi befektetéssel eredményeznek nagy változásokat a veterán autókban.</p></li>
-                              </ul>
+                              <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Castle
+                              </button>
+                              <ul class="dropdown-menu">
+                                  <li><img src="img/kep13.jpg"></li>
+                                  <li><p>A krimi koronázatlan királya Rick Castle (Nathan Fillion) az egyik legsikeresebb író, akitől újabb remekműveket várnak. Csakhogy Castle alkotói válságba került, nincs egyetlen eredeti sztorija sem, ezért kapóra jön neki, amikor egy ügyben a rendőrség a segítségét kéri. Kapcsolatai révén eléri, hogy a rendőrség tanácsadójaként részt vehessen Kate Beckett (Stana Katic) nyomozónő mellett a nyomozásokban. Ennek azonban Beckett cseppet sem örül, mert Castle idegesítően pimasz, öntelt, irányíthatatlan és gátlástalanul használja kisfiús sármját. A folyton civódó páros a kényszerű közös munka kapcsán számos ügyet megold, miközben egyre jobban megismerik egymást.</p></li>
+                                </ul>
+                            </div>
+                            <div class="dropdown">
+                              <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Jóbarátok
+                              </button>
+                              <ul class="dropdown-menu">
+                                  <li><img src="img/kep14.jpg"></li>
+                                  <li><p>A Jóbarátok méltán az egyik legnépszerűbb sorozat világszerte szellemes dialógusai, kifinomult és szerethető karakterei révén. Hat New York-i jóbarát életén keresztül pillanthatunk be a barátságok, a karrierépítés és a randizás rejtelmeibe.</p></li>
+                                </ul>
+                            </div>
+                            <div class="dropdown">
+                              <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Autókereskedők
+                              </button>
+                              <ul class="dropdown-menu">
+                                  <li><img src="img/kep15.jpg"></li>
+                                  <li><p>Mike Brewer, a tapasztalt autókereskedő és Edd China, a szuperszerelő már több mint tíz éve azon dolgoznak, hogy megmentsék a jobb sorsra érdemes klasszikus autókat a roncsteleptől. A műsorban Mike megvillantja a használtautó-vásárlás minden csínját-bínját, Edd pedig olyan fogásokat mutat műhelyében, amelyek ugyan sok munkával járnak, de a lehető legkisebb anyagi befektetéssel eredményeznek nagy változásokat a veterán autókban.</p></li>
+                                </ul>
                           </div>
                         </div>
                         <div>
@@ -242,7 +216,7 @@
                           </div>
                         </div>
                         <div>
-                        <li>18:00-20:00 egy másik választott film</li>
+                        <li id="I1">18:00-20:00 egy másik választott film</li>
                         <div class="dropdown">
                           <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                             A miniszter félrelép
@@ -272,7 +246,7 @@
                           </div>
                         </div>
                         <div>
-                        <li>20:00-21:00 sorozatok</li>
+                        <li id="I3">20:00-21:00 sorozatok</li>
                           <div class="dropdown">
                             <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                               Jurassic World: Krétakori tábor
@@ -302,7 +276,7 @@
                           </div>
                         </div>
                         <div>
-                        <li>21:00-22:00 anime sorozat</li>
+                        <li id="I2">21:00-22:00 anime sorozat</li>
                           <div class="dropdown">
                             <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                               Naruto
@@ -332,18 +306,27 @@
                           </div>
                         </div>
                         <div>
-                        <li>22:00-7:00 reklámok</li>
+                        <li>22:00-7:00 ismétlések</li>
+                        <a href="#I1">James Bond: Halj meg máskor</a>
+                        <br>
+                        <a href="#I2">Naruto</a>
+                        <br>
+                        <a href="#I3">Gyilkos elmék</a>
+                        <br>
+                        <a href="#I4">Jurassic Park</a>
                     </div>
                 </section>
                 <section class="row">
-                    <div class="col-lg-8 m-auto">
-
+                    <div class="col-lg-12">
+                      <br>
+                      <h2>Szavazás</h2>
+                      <p>Ez a rész még jelenleg tervezés alatt van</p>
                     </div>
                 </section>
             </main>
             <footer class="row p-xl-0">
                 <div class="col-lg-10 col-md-8 col-sm-8">
-                    <h3><b>A  projektet a CsCsT csapata készítette.</b></h3>
+                    <h3 id="Kapcsolat"><b>A  projektet a CsCsT csapata készítette.</b></h3>
                 </div>
                 <div class="float-end col-lg-2 col-md-4 col-sm-1">
                     <a href="https://github.com/Csipi456/IKT.haziallatok"><img src="img/GitHub.png" class="linkek"></a>
@@ -369,7 +352,7 @@
                             </ul>
                         </article>
                         <article class="col-xl-1 d-none d-lg-block">
-                                <img src="img/logo.png" alt="logo">
+                                <img src="img/logo.png" id="logo">
                         </article>
                         <article class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
                             <p>Szolgáltató: Kockáztató Kockák, BMSZC Neumann János Informatikai Technikum</p>
@@ -381,6 +364,7 @@
                             </ul>
                     </article>
                 </section>
+                <p>CsCsT TV csatorna 2024 Minden jog fenntartva!</p>
             </footer>
 </body>
 </html>
